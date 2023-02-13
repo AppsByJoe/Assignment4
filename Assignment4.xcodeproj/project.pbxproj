@@ -13,6 +13,7 @@
 		ECC219E62999BE480076AF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC219E42999BE480076AF5E /* Main.storyboard */; };
 		ECC219E82999BE490076AF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC219E72999BE490076AF5E /* Assets.xcassets */; };
 		ECC219EB2999BE490076AF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC219E92999BE490076AF5E /* LaunchScreen.storyboard */; };
+		ECC219F52999D2720076AF5E /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC219F42999D2720076AF5E /* Choice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ECC219E72999BE490076AF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC219EA2999BE490076AF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC219EC2999BE490076AF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC219F42999D2720076AF5E /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		ECC219F22999C0F90076AF5E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECC219F42999D2720076AF5E /* Choice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				ECC219E32999BE480076AF5E /* ViewController.swift in Sources */,
 				ECC219DF2999BE480076AF5E /* AppDelegate.swift in Sources */,
+				ECC219F52999D2720076AF5E /* Choice.swift in Sources */,
 				ECC219E12999BE480076AF5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
