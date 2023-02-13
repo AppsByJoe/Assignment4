@@ -31,5 +31,7 @@ class ViewController: UIViewController {
         choiceDescription.text = storyLogic.getNextChoice()
         buttonChoiceOne.setTitle(storyLogic.getChoiceOne(), for: .normal)
         buttonChoiceTwo.setTitle(storyLogic.getChoiceTwo(), for: .normal)
+        buttonChoiceOne.backgroundColor = UIColor.clear
+        buttonChoiceTwo.backgroundColor = UIColor.clear
     }
 }
