@@ -16,11 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-hQ-D5f">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="VXP-2B-Ibh">
                                 <rect key="frame" x="30" y="59" width="333" height="759"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choiceDescription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyq-kK-0HM">
-                                        <rect key="frame" x="97.666666666666686" y="0.0" width="137.66666666666663" height="186.33333333333334"/>
+                                        <rect key="frame" x="97.666666666666671" y="0.0" width="137.66666666666663" height="186.33333333333334"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -37,19 +40,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-hQ-D5f">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VXP-2B-Ibh" secondAttribute="trailing" constant="30" id="Jmm-de-yhI"/>
                             <constraint firstItem="bS2-hQ-D5f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LDB-oW-xVA"/>
-                            <constraint firstItem="bS2-hQ-D5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MWA-dB-ngs"/>
+                            <constraint firstItem="bS2-hQ-D5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MWA-dB-ngs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VXP-2B-Ibh" secondAttribute="bottom" id="eCO-7j-Uuq"/>
                             <constraint firstAttribute="bottom" secondItem="bS2-hQ-D5f" secondAttribute="bottom" id="el9-lW-O1a"/>
-                            <constraint firstItem="bS2-hQ-D5f" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rMM-rk-CFK"/>
+                            <constraint firstItem="bS2-hQ-D5f" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="rMM-rk-CFK"/>
                             <constraint firstItem="VXP-2B-Ibh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tcg-fo-iq7"/>
                             <constraint firstItem="VXP-2B-Ibh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zpQ-3m-1hq"/>
                         </constraints>
