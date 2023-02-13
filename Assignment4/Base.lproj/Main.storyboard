@@ -22,21 +22,45 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="VXP-2B-Ibh">
                                 <rect key="frame" x="30" y="59" width="333" height="759"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choiceDescription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyq-kK-0HM">
-                                        <rect key="frame" x="97.666666666666671" y="0.0" width="137.66666666666663" height="186.33333333333334"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choiceDescription" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyq-kK-0HM">
+                                        <rect key="frame" x="62.333333333333329" y="0.0" width="208.33333333333337" height="186.33333333333334"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-BoldOblique" family="Helvetica" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiH-4D-uQx">
-                                        <rect key="frame" x="125.66666666666666" y="286.33333333333331" width="82" height="186.33333333333331"/>
+                                        <rect key="frame" x="117.33333333333334" y="286.33333333333331" width="98.666666666666657" height="186.33333333333331"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="choice1"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="choice1">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pathChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8a9-nC-H9Z"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0S-Vo-C3A">
-                                        <rect key="frame" x="124.33333333333334" y="572.66666666666663" width="84.333333333333343" height="186.33333333333337"/>
+                                        <rect key="frame" x="117.33333333333334" y="572.66666666666663" width="98.666666666666657" height="186.33333333333337"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="choice2"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="choice2">
+                                                    <attributes>
+                                                        <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -54,14 +78,22 @@
                             <constraint firstItem="VXP-2B-Ibh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zpQ-3m-1hq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonChoiceOne" destination="kiH-4D-uQx" id="ofH-WJ-s7A"/>
+                        <outlet property="buttonChoiceTwo" destination="v0S-Vo-C3A" id="UU0-7T-fmF"/>
+                        <outlet property="choiceDescription" destination="hyq-kK-0HM" id="CNR-FU-umb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.671755725190835" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="-593" y="2"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="333.33334350585938" height="208.33332824707031"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

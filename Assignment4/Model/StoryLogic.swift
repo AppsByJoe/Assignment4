@@ -20,7 +20,7 @@ struct StoryLogic {
             ]
     
 
-    mutating func increaseIndex(_ userChoice : String) {
+    mutating func getNextIndex(_ userChoice : String) {
         if userChoice == choice[choiceIndex].choice_one {
             choiceIndex = choice[choiceIndex].next_index_ch1
         } else if userChoice == choice[choiceIndex].choice_two {
