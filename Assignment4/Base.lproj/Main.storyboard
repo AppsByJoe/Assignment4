@@ -67,6 +67,9 @@
                                             </attributedString>
                                             <color key="baseBackgroundColor" systemColor="secondaryLabelColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="pathChosen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SI0-Gs-WmZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
