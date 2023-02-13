@@ -28,7 +28,7 @@ struct StoryLogic {
                          5,
                          6),
                 Choice("After you curl up in your snow shelter, the blizzard subsides.  Your clothes are soaking wet from the snow.  You notice sticks and branches around the crash site.",
-                         "Gather fire-building material and attempt to start a fire.",
+                         "Gather fire-building materials and attempt to start a fire.",
                          "Stay curled up in your snow shelter.",
                          7,
                          8),
